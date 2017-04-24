@@ -1,0 +1,61 @@
+*{margin:0; padding:0; list-style:none; }
+html, body {  position: relative;  height: 100%;  }
+body {  background: #fff;  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  font-size: 14px;  color:#000;  margin: 0;  padding: 0;  }
+a{ text-decoration:none; color:#333;  }
+
+/*共用样式*/
+.h-t{color:#3d3d3d}
+.h2-t{color:#767676}
+.b-t{color:#fff}
+
+/*首页*/
+.header{width:100%; height:54px; background-color: #fff; }
+.header-box{position:relative; width:1200px;  height: 54px; margin:0 auto;  }
+.header-box-red{ position: absolute; overflow:hidden;  width:192px ; height:89px; top:0; left:0 ;  background-color: red; }
+.header-box-red a{display: block;  height:100%; background:url(../img/logo.png) no-repeat center;}
+.contant{width:100%; overflow:hidden; }
+.banner{width:100%; height:780px; background:url(../img/banner.jpg) no-repeat top center ; background-size: cover; }
+.banner-box{ position:relative; overflow:hidden; width:1200px; height:780px;  margin: 0 auto;}
+.banner-box-tit{position:absolute; overflow: hidden; top:35%;}
+.banner-box-tit h1 {font-size:62px;  }
+.banner-box-tit span {font-size:41px;  }
+.header-box-rig{float:right; width:200px; height:54px; color:#6f6f6f;background: url(../img/head-number.png) no-repeat right center}
+.header-box-rig span{float:left; font-size:16px; color:#6f6f6f; margin: 22px -8px 0}
+.bananer-box-buttom{position:absolute; overflow: hidden; bottom:0; right:0; width:742px; height:147px; background: rgba(244,38,40,0.7)}
+.bananer-box-buttom h2{font-size:26px; margin: 37px 0 16px 35px}
+.bananer-box-buttom h3{font-size:14px; margin-left: 35px}
+.bananer-box-buttom img{position:absolute; top:23px; right:-40px; animation: myfontwe 20s infinite; }
+
+/* 本例子css */
+.txtScroll-left{ width:450px;  position:relative;  border:1px solid #ccc;   }
+.txtScroll-left .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+.txtScroll-left .hd .prev,.txtScroll-left .hd .next{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden; cursor:pointer; background:url("images/arrow.png") no-repeat;}
+.txtScroll-left .hd .next{ background-position:0 -50px;  }
+.txtScroll-left .hd .prevStop{ background-position:-60px 0; }
+.txtScroll-left .hd .nextStop{ background-position:-60px -50px; }
+.txtScroll-left .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px;  }
+.txtScroll-left .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("images/icoCircle.gif") 0 -9px no-repeat; }
+.txtScroll-left .hd ul li.on{ background-position:0 0; }
+.txtScroll-left .bd{ padding:10px; width:430px; overflow:hidden;    }
+.txtScroll-left .bd ul{ overflow:hidden; zoom:1; }
+.txtScroll-left .bd ul li{ margin-right:20px;  float:left; height:200px; line-height:24px;  text-align:left; _display:inline;}
+.txtScroll-left .bd ul li span{ color:#999;  }
+
+/*动画*/
+@keyframes mybg{
+    0%{background-size: 120% 120%;}
+    100%{background-size: 100% 100%;}
+}
+@keyframes myfonts{
+    0%{top: 1%; opacity: .1;}
+    100%{top:11%;opacity: 1;}
+}
+@keyframes myfontwe{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+@keyframes myimg{
+    0%{ transform: scale(1,1);}
+    30%{ transform: scale(1.2,1.2);}
+    60%{transform: scale(1.1,1.1);}
+    100%{transform: scale(1,1);}

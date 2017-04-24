@@ -1,0 +1,27 @@
+.nav-rad{background:#df3e35 }
+.head-st{height:54px; background-color: #fff}
+.head-red{height:89px; background-color: red;}
+/*.head-red img{margin-top:25px; }*/
+.heade-right{text-}
+
+.banner{padding-top:54px; height:781px; background: url(../img/banner.jpg) no-repeat center; background-size: cover  }
+
+
+/*动画*/
+@keyframes mybg{
+    0%{background-size: 120% 120%;}
+    100%{background-size: 100% 100%;}
+}
+@keyframes myfonts{
+    0%{top: 1%; opacity: .1;}
+    100%{top:11%;opacity: 1;}
+}
+@keyframes myfontwe{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+@keyframes myimg{
+    0%{ transform: scale(1,1);}
+    30%{ transform: scale(1.2,1.2);}
+    60%{transform: scale(1.1,1.1);}
+    100%{transform: scale(1,1);}

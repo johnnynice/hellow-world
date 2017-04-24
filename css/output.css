@@ -1,0 +1,52 @@
+/*
+Error: Invalid CSS after "*": expected selector, was "{margin:0; padd..."
+        on line 1 of Nomstyle.css
+
+1: *{margin:0; padding:0; list-style:none; }
+2: html, body {  position: relative;  height: 100%;  }
+3: body {  background: #fff;  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  font-size: 14px;  color:#000;  margin: 0;  padding: 0;  }
+4: a{ text-decoration:none; color:#333;  }
+5: 
+6: /*共用样式*\/
+
+Backtrace:
+Nomstyle.css:1
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/scss/static_parser.rb:21:in `parse_selector'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:427:in `visit_rule'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/Users/apple/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/Users/apple/.rvm/gems/ruby-2.4.0/bin/sass:22:in `load'
+/Users/apple/.rvm/gems/ruby-2.4.0/bin/sass:22:in `<main>'
+/Users/apple/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/apple/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"*\": expected selector, was \"{margin:0; padd...\"\A         on line 1 of Nomstyle.css\A \A 1: *{margin:0; padding:0; list-style:none; }\A 2: html, body {  position: relative;  height: 100%;  }\A 3: body {  background: #fff;  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  font-size: 14px;  color:#000;  margin: 0;  padding: 0;  }\A 4: a{ text-decoration:none; color:#333;  }\A 5: \A 6: /*共用样式*/"; }
